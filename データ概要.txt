@@ -1,0 +1,58 @@
+データ概要: figo_stage_survival.csv
+総観測数: 581
+イベント(=1)数: 348
+打ち切り(=0)数: 233
+ステージ欠損数: 4
+
+ステージ別件数:
+  Stage IIIC: 410
+  Stage IV: 89
+  Stage IIIB: 24
+  Stage IIC: 21
+  Stage IC: 11
+  Stage IIIA: 8
+  Stage IIB: 5
+  Stage IIA: 4
+  nan: 4
+  Stage IB: 3
+  Stage IA: 2
+
+ステージ別イベント率: (count, events, event_rate)
+  Stage IA: 2 1 0.500
+  Stage IB: 3 1 0.333
+  Stage IC: 11 2 0.182
+  Stage IIA: 4 0 0.000
+  Stage IIB: 5 2 0.400
+  Stage IIC: 21 6 0.286
+  Stage IIIA: 8 4 0.500
+  Stage IIIB: 24 12 0.500
+  Stage IIIC: 410 249 0.607
+  Stage IV: 89 69 0.775
+
+全体 生存日数 中央値: 1004 (最小 8, 最大 5481)
+
+ステージ別 生存日数要約: (count, median, min, max)
+  Stage IA: 2 1851 1265 2437
+  Stage IIA: 4 1325 576 2163
+  Stage IIIB: 24 1153 44 2742
+  Stage IIIA: 8 1141 165 1947
+  Stage IIC: 21 1127 16 2338
+  Stage IIIC: 410 1034 9 5481
+  Stage IV: 89 880 8 3887
+  Stage IC: 11 819 132 2967
+  Stage IIB: 5 797 186 2148
+  Stage IB: 3 55 19 396
+
+変数定義案:
+  case_id: 患者/症例識別子 (非解析目的、レポートで直接利用しない)
+  figo_stage: FIGO病期分類 (カテゴリ変数)。欠損は除外または「不明」カテゴリ。
+  survival_days: 観測開始からイベントまたは打ち切りまでの日数。
+  event: 1=事象発生 (例: 死亡), 0=右打ち切り。
+解析方針案:
+  1. 欠損ステージの除外または不明カテゴリ化。
+  2. FIGO病期を基準カテゴリ (例: Stage IA/IB) としたハザード比推定。
+  3. 生存曲線: stage別Kaplan-Meierを付録、本文はハザード比解釈中心。
+  4. 比例性診断: Schoenfeld残差でステージ係数の時間依存性確認。
+  5. 必要なら病期を順序尺度化し線形トレンド検定。
+  6. 外れ値: survival_days極小/極大は計測異常か確認。
+  7. 長期生存 (最大値付近) の影響評価。

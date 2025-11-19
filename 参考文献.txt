@@ -1,0 +1,44 @@
+参考文献（年方式・アルファベット順）
+
+書き方のルール
+・本文では著者名と年で参照（例：Cox (1972), Therneau and Grambsch (2000)）。
+・一覧は第1著者（団体名含む）のアルファベット順。複数著者は “and” 表記、3名以上は最初の1名＋“et al.” も可。
+・ジャーナル論文：著者 (年). 論文名. 誌名, 巻(号), ページ.
+・書籍：著者 (年). 書名 (版数). 出版社.
+・データ/ソフト：提供主体 (年). 名称 (Version/アクセス日). 取得先 URL.
+・アクセスポータルは取得日 (Accessed YYYY-MM-DD) を明記。
+
+Andersen, P. K., and Gill, R. D. (1982). Cox's regression model for counting processes: A large sample study. Annals of Statistics, 10(4), 1100–1120.
+	- 計数過程表現に基づくCox回帰の漸近理論（大標本性質）の古典。
+
+Breslow, N. E. (1974). Covariance analysis of censored survival data. Biometrics, 30(1), 89–99.
+	- 打ち切りデータの共分散解析とtiesへのBreslow近似の基礎。
+
+Cox, D. R. (1972). Regression models and life-tables. Journal of the Royal Statistical Society: Series B (Methodological), 34(2), 187–220.
+	- 比例ハザードモデルの提案と部分尤度の導入。
+
+Davidson-Pilon, C. (2025). lifelines: Survival analysis in Python (Version 未固定, accessed 2025-11-14). GitHub repository. https://github.com/CamDavidsonPilon/lifelines
+	- 本研究で使用したPython生存解析ライブラリlifelinesの公式リポジトリ。
+
+Efron, B. (1977). The efficiency of Cox's likelihood function for censored data. Journal of the American Statistical Association, 72(359), 557–565.
+	- 部分尤度の効率性解析とtiesに対するEfron近似の提案。
+
+Genomic Data Commons Portal (2025). GDC Data Portal (accessed 2025-11-14). https://portal.gdc.cancer.gov/
+	- TCGAなど公的がんゲノムデータの取得ポータル（本研究のデータ取得元）。
+
+Harrell, F. E. (2015). Regression Modeling Strategies (2nd ed.). Springer.
+	- 生存解析を含む回帰モデリングの実務・診断・報告に関する実践的教科書。
+
+Kalbfleisch, J. D., and Prentice, R. L. (2002). The Statistical Analysis of Failure Time Data (2nd ed.). Wiley.
+	- 生存時間データ解析の標準的教科書（理論と方法の体系）。
+
+Schoenfeld, D. (1982). Partial residuals for the proportional hazards regression model. Biometrika, 69(1), 239–241.
+	- Schoenfeld残差を用いた比例ハザード仮定の診断法を提案。
+
+The Cancer Genome Atlas Research Network (2011). Integrated genomic analyses of ovarian carcinoma. Nature, 474(7353), 609–615.
+	- TCGAによる卵巣癌の統合ゲノム解析（本研究コホートの背景文献）。
+
+Therneau, T. M., and Grambsch, P. M. (2000). Modeling Survival Data: Extending the Cox Model. Springer.
+	- Coxモデル拡張、PH診断、時変効果などの体系的解説。
+
+（追加が必要になった文献はアルファベット順を保って挿入する）

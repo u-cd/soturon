@@ -1,0 +1,19 @@
+基本Cox比例ハザードモデル（単変量: 病期グループ）
+参照カテゴリ: Stage IIIC
+グループ化: EarlyMid = (I/II/IIIA/IIIB/IIC など), IIIC, IV
+
+係数推定 (β), HR=exp(β), 95%CI, p値:
+  stage_EarlyMid_vs_IIIC: beta=-0.4225 HR=0.655 95%CI=(0.443, 0.970) p=0.0346
+  stage_IV_vs_IIIC: beta=0.2808 HR=1.324 95%CI=(1.014, 1.729) p=0.0393
+
+C-index: 0.563
+Log-likelihood: -1869.646
+AIC (approx): 3743.291
+
+PH仮定検定（Schoenfeld残差, time_transform=rank）:
+  stage_EarlyMid_vs_IIIC: stat=nan p=0.00313
+  stage_IV_vs_IIIC: stat=nan p=0.0727
+PH検定 summary table:
+                        test_statistic         p  -log2(p)
+stage_EarlyMid_vs_IIIC        8.731585  0.003127  8.320800
+stage_IV_vs_IIIC              3.221768  0.072665  3.782594
