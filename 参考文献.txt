@@ -1,24 +1,17 @@
-参考文献（年方式・アルファベット順）
-
-書き方のルール
-・本文では著者名と年で参照（例：Cox (1972), Therneau and Grambsch (2000)）。
-・一覧は第1著者（団体名含む）のアルファベット順。複数著者は “and” 表記、3名以上は最初の1名＋“et al.” も可。
-・ジャーナル論文：著者 (年). 論文名. 誌名, 巻(号), ページ.
-・書籍：著者 (年). 書名 (版数). 出版社.
-・データ/ソフト：提供主体 (年). 名称 (Version/アクセス日). 取得先 URL.
-・アクセスポータルは取得日 (Accessed YYYY-MM-DD) を明記。
-
+参考文献
 
 Cox, D. R. (1972). Regression models and life-tables. Journal of the Royal Statistical Society: Series B (Methodological), 34(2), 187–220.
 	- 比例ハザードモデルの提案と部分尤度の導入。
+	- https://www.jstor.org/stable/2985181?read-now=1&seq=1
 
 Breslow, N. E. (1974). Covariance analysis of censored survival data. Biometrics, 30(1), 89–99.
 	- 打ち切りデータの共分散解析とtiesへのBreslow近似の基礎。
+	- https://www.jstor.org/stable/2529620?read-now=1&seq=6#page_scan_tab_contents
 
 Schoenfeld, D. (1982). Partial residuals for the proportional hazards regression model. Biometrika, 69(1), 239–241.
 	- Schoenfeld残差を用いた比例ハザード仮定の診断法を提案。
+	- https://www.jstor.org/stable/2335876?read-now=1&seq=1#page_scan_tab_contents
 
 Genomic Data Commons Portal (2025). GDC Data Portal (accessed 2025-11-14). https://portal.gdc.cancer.gov/projects/TCGA-OV
 	- TCGAなど公的がんゲノムデータの取得ポータル（本研究のデータ取得元）。
-
-（追加が必要になった文献はアルファベット順を保って挿入する）
+	- https://portal.gdc.cancer.gov/projects/TCGA-OV

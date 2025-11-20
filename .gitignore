@@ -16,8 +16,9 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
-
-# Data (selective)
-figo_stage_survival.csv
+# tex
+thesis.aux
+thesis.fdb_latexmk
+thesis.fls
+thesis.log
+thesis.out
